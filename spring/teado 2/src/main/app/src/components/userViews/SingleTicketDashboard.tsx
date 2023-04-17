@@ -17,6 +17,7 @@ function SingleTicketDashboard(props: {
   currentTicket?:any;
   commentAdded?:boolean;
   setCommentAdded?:Function;
+  setCurrentTicket:Function;
 
 
 }) {
@@ -30,6 +31,7 @@ function SingleTicketDashboard(props: {
   const setTicketView=props.setTicketView;
   let ticketId: any = useParams();
   let ticket:TicketType | undefined;
+  const setCurrentTicket=props.setCurrentTicket;
 //   if(!ticketId.ticketId){
 //   if(currentTicket){
 //     ticketId.ticketId=currentTicket.ticketNumber;
@@ -42,7 +44,9 @@ function SingleTicketDashboard(props: {
   if(currentTicket===undefined){
   ticket = tickets.find(
     (element) => element.ticketNumber === ticketId.ticketId
-  );}
+  );
+  setCurrentTicket(ticket);
+}
   else{
     ticket=currentTicket;
   }

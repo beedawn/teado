@@ -57,7 +57,7 @@ function Dashboard(props: {
 </Col>
 <Col xs={12} md={6}>
 {ticketView?
-<SingleTicketDashboard setTicketView={setTicketView} updateStatus={updateStatus} tickets={tickets} setTickets={setTickets} currentTicket={currentTicket} commentAdded={commentAdded} setCommentAdded={setCommentAdded}  />
+<SingleTicketDashboard  setCurrentTicket={setCurrentTicket} setTicketView={setTicketView} updateStatus={updateStatus} tickets={tickets} setTickets={setTickets} currentTicket={currentTicket} commentAdded={commentAdded} setCommentAdded={setCommentAdded}  />
   :
 <EditTicket
             setTickets={setTickets}
