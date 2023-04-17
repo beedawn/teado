@@ -1,0 +1,185 @@
+html{
+    background-color:rgb(245, 244, 244);
+}
+.App{
+    background-color:rgb(245, 244, 244);
+}
+.statusInput {
+    max-width: 200px;
+    font-size:10px;
+}
+.statusInput select{
+    max-width: 200px;
+    font-size:12px;
+}
+
+
+.addTicketTitle{
+    font-size:16px;
+    font-weight:bold;
+    border-radius:1px;
+    padding:2rem;
+}
+.focusTicketTitle{
+    font-size:16px;
+    font-weight:bold;
+    border-radius:1px;
+    padding:2rem;
+}
+
+.commentTicketTitle{
+    font-size:16px;
+    font-weight:bold;
+    border-radius:1px;
+    padding:2rem;
+}
+
+.userCommentTitle:first {
+    font-weight:bold;
+}
+.userComment:first-child .userCommentHeader:first-child{
+   border-top-right-radius: 7px;
+   border-top-left-radius: 7px;
+}
+.userComment:last-child{
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-bottom-width:0px;
+ }
+ .userComment{
+    border-bottom-color:rgb(241, 185, 252);
+    border-bottom-width:1px;
+    border-bottom-style:dashed;
+    display:block;
+ }
+
+.userComment:nth-child(odd){
+    background-color: rgb(248, 248, 248);
+ 
+}
+.userComment:nth-child(even){
+    background-color: rgb(248, 246, 253);
+}
+.userCommentHeader{
+    background-color:rgba(189, 192, 201, 0.3);
+    color:black;
+}
+.userCommentTitle{
+    font-weight:bold;
+    display:block;
+}
+.deleteComment{
+    display:inline;
+}
+.editComment{
+    display:inline;
+}
+.ticketQueueView{
+   background-color:rgba(255, 255, 255, 0.8);
+        height: 150px;
+        width: 100%;
+        padding:10px;
+        margin-bottom:.5rem;
+        overflow-y: scroll;
+        overflow-x:hidden;
+        font-size:12px;
+        border-radius:1px;
+
+   
+}
+
+.currentSelectedQueue{
+    background-color:rgb(234, 230, 255);
+    border-radius:10px;
+    padding:5px;
+    padding-left:0px;
+    margin-left:0px;
+    color: black;
+}
+.currentSelectedQueue a{
+    color: rgb(0, 0, 0);
+}
+
+.dashboardWhole{
+    display:flex;
+}
+.singleTicketDashboard{
+    height: 75vh;
+    width: 60%;
+    padding:30px;
+   
+    overflow-y: scroll;
+    overflow-x:hidden;
+    font-size:12px;
+    display:flex;
+    flex-direction:row;
+    font-size:12px;
+ 
+}
+.addTicketDashboardOrder{
+    background-color:rgba(255, 255, 255, 0.8);
+    margin-top:1rem;
+    border-radius:1px;
+    padding:1rem;
+}
+.dashboardContainerStyle{
+  
+    height:100vh;
+}
+
+.selectedTicketStyle{
+    background-color:rgba(255, 255, 255, 0.8);
+    margin-top:1rem;
+    border-radius:1px;
+    padding:1rem;
+    
+}
+.bottomPadding{
+    height:5rem;
+}
+.topPadding{
+    height:2rem;
+}
+.commentContainerStyle{
+    background-color:rgba(255, 255, 255, 0.8);
+    margin-top:1rem;
+    border-radius:1px;
+    padding:1rem;
+   
+}
+
+
+
+.addTicketDashboard{
+    height: 75vh;
+    width: 20%;
+    padding:30px;
+   
+    overflow-x:hidden;
+    display:flex;
+    flex-direction:row;
+    font-size:12px;
+ 
+}
+
+
+
+.addTicketDashboard input {
+    
+    font-size:12px;
+ 
+}
+.addTicketDashboard textarea{
+  
+    font-size:12px;
+ 
+}
+
+.addCommentDashboard{
+    height: 75vh;
+    width:20%;
+    padding:30px;
+    display:flex;
+    flex-direction:row;
+    font-size:12px;
+}

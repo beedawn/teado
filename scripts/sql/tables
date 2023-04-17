@@ -1,0 +1,9 @@
+CREATE TABLE tickets
+(
+  id              INT unsigned NOT NULL AUTO_INCREMENT, # Unique ID for the record
+  name            VARCHAR(150) NOT NULL,                # Name of the requestor
+  title           VARCHAR(150) NOT NULL,                # title of ticket
+  email           VARCHAR(150) NOT NULL,                # email of requestor
+  description     VARCHAR(150) NOT NULL,                # description of issue
+  PRIMARY KEY     (id)                                  # Make the id the primary key
+);
