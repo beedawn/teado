@@ -39,3 +39,8 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
+
+#application properties
+application.properties
+
+.env
