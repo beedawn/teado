@@ -30,7 +30,7 @@ setCurrentTicket(tickets[(ticket.ticketNumber-2)]);
 
     apiCall(setTickets, ticket.id.toString(), "DELETE", ticket);
 
-    
+    apiCall(setTickets);
 
 }
 
