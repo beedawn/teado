@@ -98,6 +98,12 @@ return (
                 reporter: reporter,
                 projectName:projectName
               });
+              setTitle("");
+              setDescription("");
+              setReporter("");
+              setEmail("");
+              setProjectName("");
+
             }}
           >
             Submit

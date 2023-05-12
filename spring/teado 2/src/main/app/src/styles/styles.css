@@ -7,13 +7,19 @@ html{
 .statusInput {
     max-width: 200px;
     font-size:10px;
+    margin:auto;
 }
 .statusInput select{
     max-width: 200px;
     font-size:12px;
 }
 
-
+.editTicketDiv{
+    background-color: white;
+    padding:25px;
+    margin-top:15px;
+    border-radius:2px;
+}
 .addTicketTitle{
     font-size:16px;
     font-weight:bold;

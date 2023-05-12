@@ -49,14 +49,14 @@ function EditTicket(props: {
 
   if (ticket) {
     return (
-      <div>
+      <div className="editTicketDiv">
         <Link
          to='#'
         //  to={`/view/${ticket.ticketNumber}`} 
          onClick={()=>{if(setTicketView){setTicketView(true)}}}>Back to Ticket</Link>
         <Form>
           <Form.Group className="mb-3" controlId="formTicket">
-            <Form.Label>Ticket Title</Form.Label>
+            <Form.Label>Ticket Title
             <Form.Control
               type="text"
               placeholder="Enter title"
@@ -67,7 +67,8 @@ function EditTicket(props: {
                  setTitle(e.target.value);
              	 }
 	      }
-            />
+            /></Form.Label>
+            <Form.Label>Comment
             <Form.Control
               as="textarea"
               rows={3}
@@ -76,9 +77,10 @@ function EditTicket(props: {
               onChange={(e: any) => {
                 setDescription(e.target.value);
               }}
-            />
+            /></Form.Label>
 
 <div className="statusInput">
+<Form.Label>Status
         <Form.Select
           aria-label="status selector"
           className="statusInput"
@@ -93,7 +95,9 @@ function EditTicket(props: {
           <option value={Status.IN_PROGRESS}>In Progress</option>
           <option value={Status.CLOSED}>Closed</option>
         </Form.Select>
+        </Form.Label>
       </div>
+    
           </Form.Group>
           <Link to={`/view/${ticket.ticketNumber}`}>
             <Button

@@ -86,6 +86,10 @@ function AddComment(props:{setCommentView:Function, ticket:TicketType, newCommen
                 comment: comment,
                 user: user,
               });
+              setTitle("");
+              setComment("");
+              setUser("");
+
             }}
           >
             Submit
